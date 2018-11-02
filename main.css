@@ -1,0 +1,84 @@
+.hero-container {
+    background-image: url("images/title-original.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+html {
+    font-size: 1rem;
+}
+.text-size-1 {
+    font-size: 4rem;
+}
+.text-size-2 {
+    font-size: 1.8rem;
+}
+.text-size-3 {
+    font-size: 5em;
+}
+.text-size-4 {
+    font-size: 1.250em;
+}
+.m-7 {
+    margin: 3rem 5rem!important;
+}
+.btn-custom {
+    padding: 0.5rem 1.2rem;
+    font-size: 1.5rem;
+    color: #000;
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    transition: 0.3s;    
+}
+.btn-custom:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #000;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
+.upper-margin {
+    margin-top: 2rem;
+}
+
+.sala-na-lad {
+    margin-top: 5rem;
+    margin-left: 10rem;
+}
+
+.font {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.middle-text {
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sala-na-lad-text-small {
+    font-size: 20px;
+    color: darkgray;
+}
+
+.galeria-text {
+    font-size: 20px;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.paragraf-text-block {
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 20px;
+}
+
+.contact-box {
+    height: 10rem;
+    width: 100%;
+    padding: 4rem;
+    background-color: dimgray;
+    color: white;
+    display: inline-block;
+}
