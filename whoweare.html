@@ -1,17 +1,45 @@
+<!DOCTYPE html>
 <html lang="sk">
-    <head>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<head>
+    <title>Šaľa, na ľad! - Zimný štadión Šaľa, jeho súčasnosť a budúcnosť</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta property="og:title" content="Šaľa, na ľad! - Zimný štadión Šaľa, jeho súčasnosť a budúcnosť">
+    <meta property="og:site_name" content="Šaľa, na ľad!">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://salanalad.sk/images/title-original.jpg">
+    <meta property="og:url" content="https://salanalad.sk">
+    <meta name="twitter:title" content="Šaľa, na ľad! - Zimný štadión Šaľa, jeho súčasnosť a budúcnosť">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https://salanalad.sk/images/title-original.jpg">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:creator" content="">
+    <meta name="description" content=""/>
+    <meta name="author" content="gemetria@gemetria.sk">
+    <meta name="keywords" content="">
+</head>
+<body>
+    <noscript id="deferred-styles">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="main.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Šaľa, na ľad! - Zimný štadión Šaľa, jeho súčasnosť a budúcnosť</title>
-        <meta charset="utf-8" />
-    </head>
-    <body>
-        <!-- Navigation bar -->
+    </noscript>
+    <script>
+        var loadDeferredStyles = function() {
+            var addStylesNode = document.getElementById("deferred-styles");
+            var replacement = document.createElement("div");
+            replacement.innerHTML = addStylesNode.textContent;
+            document.body.appendChild(replacement);
+            addStylesNode.parentElement.removeChild(addStylesNode);
+        };
+        var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+            window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+        if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+        else window.addEventListener('load', loadDeferredStyles);
+    </script>
+    <!-- Navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Šaľa na ľad!</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,15 +69,6 @@
         </div>
     </nav>
     <!-- Hero -->
-    <div class="hero-container">
-        <div class="container d-flex h-100">
-            <div class="container-fluid align-self-center">
-                <h1 class="text-white font text-size-1"><b>Šaľa, na ľad!</b></h1>
-                <h5 class="text-white font text-size-2"><i>Zimný štadión Šaľa, jeho súčasnosť a budúcnosť</i></h5>
-                <a class="btn-custom btn-lg" href="#text">Pokračovať</a>
-            </div>
-        </div>    
-    </div>
     <h2 class="text-size-3 m-5 text-center"><b>Kto sme</b></h2>
     <div class="container-fluid text-center">
         <h3 class="m-5 text-center"><b>Veronika Pahokiová</b></h3> 
@@ -66,33 +85,35 @@
         <p class="m-7 text-size-4">Radi privítame ľudí, ktorí majú chuť a možnosť pomôcť tejto iniciatíve, <a href="contactus.html">ozvi sa nám</a>, ak ku takým patríš.</p>
     </div>
     <div>
-            <div class="contact-box">
-                <div class="container">
-                    <div class="row">
-                    <div class="col">
-                        <img src="./images/map.png" width="16" height="16" alt="Map">
-                        <label class="align-left">Váhová 1006/17,SK-927 01 Šaľa</label>
-                    </div>
-                    <div class="col">
-                        <img src="./images/email.png" width="20" height="20" alt="Mail">
-                        <label class="align-center">salanalad@gmail.com</label>
-                    </div>
-                    <div class="col">
-                        <img src="./images/time.png" width="16" height="16" alt="Time">
-                        <label class="align-right">Sezóna minigolfu ukončená</label>
-                    </div>
-                </div>
+    <div class="contact-box">
+        <div class="container">
+            <div class="row">
+            <div class="col">
+                <img src="./images/map.png" width="16" height="16" alt="Map">
+                <label class="align-left">Váhová 1006/17,SK-927 01 Šaľa</label>
+            </div>
+            <div class="col">
+                <img src="./images/email.png" width="20" height="20" alt="Mail">
+                <label class="align-center">salanalad@gmail.com</label>
+            </div>
+            <div class="col">
+                <img src="./images/time.png" width="16" height="16" alt="Time">
+                <label class="align-right">Sezóna minigolfu ukončená</label>
             </div>
         </div>
-        </div>
-        <script>
-            var $root = $('html, body');
-            $('a[href^="#"]').click(function () {
-                $root.animate({
-                        scrollTop: $( $.attr(this, 'href') ).offset().top
-                    }, 500);
-                return false;
-            }); 
-        </script>
-    </body>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+        var $root = $('html, body');
+        $('a[href^="#"]').click(function () {
+            $root.animate({
+                    scrollTop: $( $.attr(this, 'href') ).offset().top
+                }, 500);
+            return false;
+        }); 
+    </script>
+</body>
 </html>

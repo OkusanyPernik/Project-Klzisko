@@ -1,19 +1,47 @@
-﻿<html lang="sk">
+﻿<!DOCTYPE html>
+<html lang="sk">
 <head>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Šaľa, na ľad! - Zimný štadión Šaľa, jeho súčasnosť a budúcnosť</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Šaľa, na ľad! - Zimný štadión Šaľa, jeho súčasnosť a budúcnosť</title>
     <meta charset="utf-8" />
+    <meta property="og:title" content="Šaľa, na ľad! - Zimný štadión Šaľa, jeho súčasnosť a budúcnosť">
+    <meta property="og:site_name" content="Šaľa, na ľad!">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://salanalad.sk/images/title-original.jpg">
+    <meta property="og:url" content="https://salanalad.sk">
+    <meta name="twitter:title" content="Šaľa, na ľad! - Zimný štadión Šaľa, jeho súčasnosť a budúcnosť">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https://salanalad.sk/images/title-original.jpg">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:creator" content="">
+    <meta name="description" content=""/>
+    <meta name="author" content="gemetria@gemetria.sk">
+    <meta name="keywords" content="">
 </head>
 <body> 
+    <noscript id="deferred-styles">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </noscript>
+    <script>
+        var loadDeferredStyles = function() {
+            var addStylesNode = document.getElementById("deferred-styles");
+            var replacement = document.createElement("div");
+            replacement.innerHTML = addStylesNode.textContent;
+            document.body.appendChild(replacement);
+            addStylesNode.parentElement.removeChild(addStylesNode);
+        };
+        var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+            window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+        if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+        else window.addEventListener('load', loadDeferredStyles);
+    </script>
     <!-- Navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Šaľa na ľad!</a>
+        <a class="navbar-brand" href="index.html">Šaľa na ľad!</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,7 +69,7 @@
         </div>
     </nav>
     <!-- Hero -->
-    <div class="hero-container">
+    <header class="hero-container">
         <div class="container d-flex h-100">
             <div class="container-fluid align-self-center">
                 <h1 class="text-white font text-size-1"><b>Šaľa, na ľad!</b></h1>
@@ -49,18 +77,20 @@
                 <a class="btn-custom btn-lg" href="#text">Pokračovať</a>
             </div>
         </div>    
-    </div>
+    </header>
     <!-- Text -->
-    <div>
-        <div class="container-fluid text-center" id="text">     
-            <h2 class="text-size-3 m-5"><b>Úvod</b></h2>
-            <h3 class="middle-text m-5"><b>Predstavenie aktivity Šaľa, na ľad!</b></h3>
-            <p class="m-7 text-size-4">Sme otvorená aktivita občanov Šale pre občanov mesta/okresu/regiónu Šale s cieľom nájsť a realizovať vhodný projekt zimnej športovej haly na mieste súčasného zimného štadióna. Aktivita vznikala v priebehu rokov 2016-2018 ako reakcia na dlhodobo sa zhoršujúcu situáciu zimného štadióna a hrozbu zastavenia jeho činnosti v dôsledku technických problémov zastaralého vybavenia štadióna. <br/> <br/> Nechceme sa uspokojiť s tým, že veci „by sa mali“ diať, očakávať, že letargický štátny aparát sa odrazu spamätá a zameria svoju podporu na naše mesto, ani sa  nechceme spoliehať na neurčitú zodpovednosť za budúcnosť štadióna, ktorá leží spolu s nespočetným množstvom iných priorít mesta na pleciach mestského zastupiteľstva. Chceme aktívne hľadať a mobilizovať potenciál obyvateľov Šale, ako aj potenciál zamestnávateľov a podnikateľov pôsobiacich v našom meste a okrese. Tento potenciál potom premeniť na zmysluplné kroky vedúce k naplneniu nášho cieľa. <br/><br/>Nechceme sa uspokojiť s tým, že veci „by sa mali“ diať, očakávať, že letargický štátny aparát sa odrazu spamätá a zameria svoju podporu na naše mesto, ani sa  nechceme spoliehať na neurčitú zodpovednosť za budúcnosť štadióna, ktorá leží spolu s nespočetným množstvom iných priorít mesta na pleciach mestského zastupiteľstva. Chceme aktívne hľadať a mobilizovať potenciál obyvateľov Šale, ako aj potenciál zamestnávateľov a podnikateľov pôsobiacich v našom meste a okrese. Tento potenciál potom premeniť na zmysluplné kroky vedúce k naplneniu nášho cieľa.</p>
-        </div>
+    <article>
+        <section class="container-fluid text-center" id="text">     
+            <!-- <div class=""> -->
+                <h2 class="text-size-1"><b>Úvod</b></h2>
+                <h3 class="middle-text text-size-2"><b>Predstavenie aktivity Šaľa, na ľad!</b></h3>
+                <p class=" text-size-4">Sme otvorená aktivita občanov Šale pre občanov mesta/okresu/regiónu Šale s cieľom nájsť a realizovať vhodný projekt zimnej športovej haly na mieste súčasného zimného štadióna. Aktivita vznikala v priebehu rokov 2016-2018 ako reakcia na dlhodobo sa zhoršujúcu situáciu zimného štadióna a hrozbu zastavenia jeho činnosti v dôsledku technických problémov zastaralého vybavenia štadióna. <br/> <br/> Nechceme sa uspokojiť s tým, že veci „by sa mali“ diať, očakávať, že letargický štátny aparát sa odrazu spamätá a zameria svoju podporu na naše mesto, ani sa  nechceme spoliehať na neurčitú zodpovednosť za budúcnosť štadióna, ktorá leží spolu s nespočetným množstvom iných priorít mesta na pleciach mestského zastupiteľstva. Chceme aktívne hľadať a mobilizovať potenciál obyvateľov Šale, ako aj potenciál zamestnávateľov a podnikateľov pôsobiacich v našom meste a okrese. Tento potenciál potom premeniť na zmysluplné kroky vedúce k naplneniu nášho cieľa. <br/><br/>Nechceme sa uspokojiť s tým, že veci „by sa mali“ diať, očakávať, že letargický štátny aparát sa odrazu spamätá a zameria svoju podporu na naše mesto, ani sa  nechceme spoliehať na neurčitú zodpovednosť za budúcnosť štadióna, ktorá leží spolu s nespočetným množstvom iných priorít mesta na pleciach mestského zastupiteľstva. Chceme aktívne hľadať a mobilizovať potenciál obyvateľov Šale, ako aj potenciál zamestnávateľov a podnikateľov pôsobiacich v našom meste a okrese. Tento potenciál potom premeniť na zmysluplné kroky vedúce k naplneniu nášho cieľa.</p>
+            <!-- </div> -->
+        </section>
         <div class="container-fluid">
-            <h3 class="m-5 text-center"><b>Zimný štadión v službách verejnosti</b></h3>  
-            <p class="m-7 text-size-4 text-center">Zámerom našej aktivity je pomôcť mestu Šaľa pripravovať a realizovať koncepty, v ktorých bude dostatočnou mierou zastúpený verejný záujem obyvateľov Šale a okolia na používaní zimného štadióna. Tento záujem definujeme nasledovne:</p>
-            <ul class="m-7 text-size-4">
+            <h3 class=" text-center text-size-2"><b>Zimný štadión v službách verejnosti</b></h3>  
+            <p class=" text-size-4 text-center">Zámerom našej aktivity je pomôcť mestu Šaľa pripravovať a realizovať koncepty, v ktorých bude dostatočnou mierou zastúpený verejný záujem obyvateľov Šale a okolia na používaní zimného štadióna. Tento záujem definujeme nasledovne:</p>
+            <ul class=" text-size-4">
             <li>prevádzka zimného štadióna po väčšinu roka, resp. po celý rok dlhodobo udržateľným spôsobom ekonomicky (bez straty) aj ekologicky (s minimalizáciou spotreby a využitím alternatívnych a obnoviteľných zdrojov energie);</li>
             <li>verejné korčuľovanie v dostatočnom rozsahu a za priaznivú cenu;</li>
             <li>bezplatné využívanie ľadu pre školy v meste Šaľa v dostatočnom rozsahu;</li>
@@ -70,33 +100,33 @@
             </ul>  
         </div>  
         <div class="container-fluid text-center">
-            <h3 class="m-5 text-center"><b>Spolupráca s mestom</b></h3>  
-            <p class="m-7 text-size-4">Naša aktivita prebieha v úzkej koordinácii a komunikácii so súčasným vedením mesta, s priamou podporou primátora. Veríme, že tento vzťah bude pokračovať bez ohľadu na výsledok blížiacich sa komunálnych volieb.</p>
+            <h3 class=" text-center text-size-2"><b>Spolupráca s mestom</b></h3>  
+            <p class=" text-size-4">Naša aktivita prebieha v úzkej koordinácii a komunikácii so súčasným vedením mesta, s priamou podporou primátora. Veríme, že tento vzťah bude pokračovať bez ohľadu na výsledok blížiacich sa komunálnych volieb.</p>
         </div>
         <div class="container-fluid text-center">
-            <h3 class="m-5 text-center"><b>Čo sa nám už podarilo</b></h3>
-            <p class="m-7 text-size-4">Z doterajšej aktivity našej iniciatívy zatiaľ vyplynuli nasledovné konkrétne výsledky: <br/><br/>Vďaka komunikácii s vedením Slovenského zväzu ľadového hokeja (SZĽH) sa v Šali 6.6.2018 uskutočnila konferencia o obnove hokejovej infraštruktúry, na ktorej sme pre účastníkmi, ktorými boli rôzne subjekty aktívne v oblasti výstavby zimných štadiónov, prezentovali naše mesto ako vhodného kandidáta na realizáciu výstavby nového zimného štadióna. Táto konferencia priniesla niekoľko hodnotných kontaktov, na ktorých v súčasnosti pracujeme a veríme, že aspoň niektoré z nich sa nám podarí dotiahnuť až do fáze realizácie projektu v Šali. <br/><br/>Vzhľadom na havarijný stav mantinelov sme hľadali možnosť riešenia tejto situácie. Vlastnou iniciatívou a takisto za podpory SZĽH, ktorý transakciu sprostredkoval, sa nám podarilo zabezpečiť pre náš štadión zánovné mantinely zo Skalice, ktoré naše mesto v rámci rozpočtu na prevádzku zimného štadióna zakúpilo a ktoré sa budú najbližších týždňoch inštalovať v Šali. Jedná sa o mantinely najvyššej kvality, vybavené takmer po celom obvode ochrannými plexisklami, vo veľmi dobrom stave. Dôvodom pre ich výmenu v Skalici boli zmenené normy IIHF, pre naše mesto a využitie nášho zimného štadióna nepodstatné, takže od budúcej sezóny budeme mať po 34 rokoch konečne naozaj veľmi dobré mantinely, ktoré sa podarilo zaobstarať rádovo asi za ¼ ceny nových mantinelov.</p>
+            <h3 class=" text-center text-size-2"><b>Čo sa nám už podarilo</b></h3>
+            <p class=" text-size-4">Z doterajšej aktivity našej iniciatívy zatiaľ vyplynuli nasledovné konkrétne výsledky: <br/><br/>Vďaka komunikácii s vedením Slovenského zväzu ľadového hokeja (SZĽH) sa v Šali 6.6.2018 uskutočnila konferencia o obnove hokejovej infraštruktúry, na ktorej sme pre účastníkmi, ktorými boli rôzne subjekty aktívne v oblasti výstavby zimných štadiónov, prezentovali naše mesto ako vhodného kandidáta na realizáciu výstavby nového zimného štadióna. Táto konferencia priniesla niekoľko hodnotných kontaktov, na ktorých v súčasnosti pracujeme a veríme, že aspoň niektoré z nich sa nám podarí dotiahnuť až do fáze realizácie projektu v Šali. <br/><br/>Vzhľadom na havarijný stav mantinelov sme hľadali možnosť riešenia tejto situácie. Vlastnou iniciatívou a takisto za podpory SZĽH, ktorý transakciu sprostredkoval, sa nám podarilo zabezpečiť pre náš štadión zánovné mantinely zo Skalice, ktoré naše mesto v rámci rozpočtu na prevádzku zimného štadióna zakúpilo a ktoré sa budú najbližších týždňoch inštalovať v Šali. Jedná sa o mantinely najvyššej kvality, vybavené takmer po celom obvode ochrannými plexisklami, vo veľmi dobrom stave. Dôvodom pre ich výmenu v Skalici boli zmenené normy IIHF, pre naše mesto a využitie nášho zimného štadióna nepodstatné, takže od budúcej sezóny budeme mať po 34 rokoch konečne naozaj veľmi dobré mantinely, ktoré sa podarilo zaobstarať rádovo asi za ¼ ceny nových mantinelov.</p>
         </div>
         <div class="container-fluid text-center">
-            <h3 class="m-5 text-center"><b>Na čom pracujeme</b></h3>
-            <p class="m-7 text-size-4">V súčasnosti pripravujeme formálny rámec tejto iniciatívy – tento spočíva v založení občianskeho združenia, ktorého agendou bude naplnenie vyššie uvedených cieľov. Zároveň pracujeme na memorande o spolupráci s mestom, ktoré deklaruje štatút tohto občianskeho združenia, pravidlá spolupráce a komunikácie.<br/><br/>Nákup mantinelov je jedna vec, ich kvalifikovaná montáž, ktorá zaručí, že mantinely budú naozaj dobre, bezpečne a spoľahlivo slúžiť v Šali, je však dodatočnou výzvou. Berieme túto výzvu ako možnosť overenia si záujmu verejnosti o takýto projekt. Veríme, že sa presvedčíme o tom, že vízia zimného štadióna v Šali nie je len snom malej skupinky nadšencov, ale verejným záujmom veľkej časti obyvateľstva nášho mesta a okresu.<br/><br/>Naša iniciatíva zamýšľa minimalizovať dodatočné finančné náklady, ktoré pre mesto spojené s inštaláciou zakúpených skalických mantinelov. Na tento účel chceme mobilizovať potenciál obyvateľov a podnikateľov nášho mesta. Tak môžeme dokázať, že v Šali existuje reálny záujem o ďalšiu existenciu zimného štadióna a tým posunúť spoluprácu mesta a našej iniciatívy o krok vpred k novej zimnej športovej hale s podporou a účasťou mesta na takomto projekte.<br/><br/>Skalické mantinely umožňujú jednoduché umiestnenie reklám po obvode ľadovej plochy, preto chceme ponúknuť záujemcom o podporu našej myšlienky možnosť umiestnenia reklamy na mantineloch v Šali a takisto by sme chceli vyrobiť tabuľu sponzorov, ktorú umiestnime pri vstupe na štadión na mieste viditeľnom z ulice.<br/><br/>Za túto reklamu môžu podporovatelia štadión podporiť buď financiami, ktoré sa použijú na uhradenie priamych výkonov špecialistu a výroby chýbajúcich kusov, alebo výkonmi či dodávkou materiálu a/alebo pracovnej sily pri inštalácii mantinelov. Všetky zmluvy budú uzatvorené priamo s mestom a ich plnenie bude v plnom rozsahu vinkulované na účel montáže mantinelov.</p>
+            <h3 class=" text-center text-size-2"><b>Na čom pracujeme</b></h3>
+            <p class=" text-size-4">V súčasnosti pripravujeme formálny rámec tejto iniciatívy – tento spočíva v založení občianskeho združenia, ktorého agendou bude naplnenie vyššie uvedených cieľov. Zároveň pracujeme na memorande o spolupráci s mestom, ktoré deklaruje štatút tohto občianskeho združenia, pravidlá spolupráce a komunikácie.<br/><br/>Nákup mantinelov je jedna vec, ich kvalifikovaná montáž, ktorá zaručí, že mantinely budú naozaj dobre, bezpečne a spoľahlivo slúžiť v Šali, je však dodatočnou výzvou. Berieme túto výzvu ako možnosť overenia si záujmu verejnosti o takýto projekt. Veríme, že sa presvedčíme o tom, že vízia zimného štadióna v Šali nie je len snom malej skupinky nadšencov, ale verejným záujmom veľkej časti obyvateľstva nášho mesta a okresu.<br/><br/>Naša iniciatíva zamýšľa minimalizovať dodatočné finančné náklady, ktoré pre mesto spojené s inštaláciou zakúpených skalických mantinelov. Na tento účel chceme mobilizovať potenciál obyvateľov a podnikateľov nášho mesta. Tak môžeme dokázať, že v Šali existuje reálny záujem o ďalšiu existenciu zimného štadióna a tým posunúť spoluprácu mesta a našej iniciatívy o krok vpred k novej zimnej športovej hale s podporou a účasťou mesta na takomto projekte.<br/><br/>Skalické mantinely umožňujú jednoduché umiestnenie reklám po obvode ľadovej plochy, preto chceme ponúknuť záujemcom o podporu našej myšlienky možnosť umiestnenia reklamy na mantineloch v Šali a takisto by sme chceli vyrobiť tabuľu sponzorov, ktorú umiestnime pri vstupe na štadión na mieste viditeľnom z ulice.<br/><br/>Za túto reklamu môžu podporovatelia štadión podporiť buď financiami, ktoré sa použijú na uhradenie priamych výkonov špecialistu a výroby chýbajúcich kusov, alebo výkonmi či dodávkou materiálu a/alebo pracovnej sily pri inštalácii mantinelov. Všetky zmluvy budú uzatvorené priamo s mestom a ich plnenie bude v plnom rozsahu vinkulované na účel montáže mantinelov.</p>
         </div>
         <div class="container-fluid text-center">
-            <h3 class="m-5 text-center"><b>Prečo sa zapojiť?</b></h3>
-            <p class="m-7 text-size-4">Otvorene: ľudí, ktorí veria, že drahé auto a tučné konto je to, prečo si ich ostatní vážia a budú pamätať, pravdepodobne osloviť nedokážeme, aj keď by sme potrebovali ich schopnosti. Toto je však o trochu inej forme prestíže. Veríme, že ak čítate ďalej, je otázka odpoveď na otázku “prečo?” v podstate zbytočná, ale predsa uvádzame pár dôvodov. <br/><br/>Športujúci ľudia = zdravší ľudia (alebo pre zamestnávateľov športujúci zamestnanci = zdravší zamestnanci) <br/><br/> Mesto s infraštruktúrou a službami = atraktívne miesto pre život. <br/><br/> Aktívna komunita = lepšia atmosféra. <br/><br/> Nie je to o zarábaní a míňaní peňazí. Je to o tvorení hodnôt, o zodpovednosti a o tom, čo tu vybudujeme a zanecháme, ako nás budú hodnotiť naše deti. <br/><br/> Toto je aktivita Šaľanov pre Šaľu – ak máte vzťah k nášmu mestu, máte dôvod, prečo mu pomôcť. Toto je konkrétna šanca, konkrétny spôsob, ako sa odpútať od davu večne nespokojných hundrajúcich kritikov a zanechať za sebou niečo, čo dá nielen Vám dobrý pocit zo seba, ale navyše pomôže vytvoriť niečo, čo prospeje ostatným. <br/><br/> Ak sa Vám teda páči predstava, že sa budete naďalej chodiť korčuľovať v Šali, že deti a mládež sa budú môcť venovať hokeju či krasokorčuľovaniu priamo v našom meste, že Šaľa bude naďalej a stále viac mestom, ktoré podporuje aktívny životný štýl, my Vám ponúkame spôsob, ako túto predstavu pomôcť naplniť.</p>
+            <h3 class=" text-center text-size-2"><b>Prečo sa zapojiť?</b></h3>
+            <p class=" text-size-4">Otvorene: ľudí, ktorí veria, že drahé auto a tučné konto je to, prečo si ich ostatní vážia a budú pamätať, pravdepodobne osloviť nedokážeme, aj keď by sme potrebovali ich schopnosti. Toto je však o trochu inej forme prestíže. Veríme, že ak čítate ďalej, je otázka odpoveď na otázku “prečo?” v podstate zbytočná, ale predsa uvádzame pár dôvodov. <br/><br/>Športujúci ľudia = zdravší ľudia (alebo pre zamestnávateľov športujúci zamestnanci = zdravší zamestnanci) <br/><br/> Mesto s infraštruktúrou a službami = atraktívne miesto pre život. <br/><br/> Aktívna komunita = lepšia atmosféra. <br/><br/> Nie je to o zarábaní a míňaní peňazí. Je to o tvorení hodnôt, o zodpovednosti a o tom, čo tu vybudujeme a zanecháme, ako nás budú hodnotiť naše deti. <br/><br/> Toto je aktivita Šaľanov pre Šaľu – ak máte vzťah k nášmu mestu, máte dôvod, prečo mu pomôcť. Toto je konkrétna šanca, konkrétny spôsob, ako sa odpútať od davu večne nespokojných hundrajúcich kritikov a zanechať za sebou niečo, čo dá nielen Vám dobrý pocit zo seba, ale navyše pomôže vytvoriť niečo, čo prospeje ostatným. <br/><br/> Ak sa Vám teda páči predstava, že sa budete naďalej chodiť korčuľovať v Šali, že deti a mládež sa budú môcť venovať hokeju či krasokorčuľovaniu priamo v našom meste, že Šaľa bude naďalej a stále viac mestom, ktoré podporuje aktívny životný štýl, my Vám ponúkame spôsob, ako túto predstavu pomôcť naplniť.</p>
         </div>
         <div class="container-fluid text-center">
-            <h3 class="m-5 text-center"><b>Ako môžeš pomôcť</b></h3>
-            <p class="m-7 text-size-4">Obraciame sa na Vás s výzvou na spoluprácu a podporu. Táto výzva sa týka najmä priaznivcov korčuľovania a hokeja, ale aj všetkých, ktorí veria, že zariadenia pre športovanie a aktívne trávenie voľného času robia z nášho mesta lepšie miesto pre život. <br/><br/> Mantinely zo Skalice sme kúpili spolu s prepravou. Cena však nezahrňuje prepravu plexiskiel a tiež nie koordináciu a organizáciu demontáže v Skalici, úpravy plochy v Šali a technické riešenie a realizáciu ich montáže na našom štadióne vrátane výroby niekoľkých metrov mantinelov na vyrovnanie rozmerových rozdielov medzi skalickou a našou ľadovou plochou. <br/><br/> Máme vypracovanú ponuku od špecialistu na takéto projekty, časť z nej pochopiteľne pozostáva priamo z výkonov tohto špecialistu a výroby chýbajúcich kusov mantinelov, zvyšok je tvorený prepravou, zakúpením a úpravou spojovacieho a hutného materiálu a búracích a pomocných prác pri inštalácii v Šali.</p>
+            <h3 class=" text-center text-size-2"><b>Ako môžeš pomôcť</b></h3>
+            <p class=" text-size-4">Obraciame sa na Vás s výzvou na spoluprácu a podporu. Táto výzva sa týka najmä priaznivcov korčuľovania a hokeja, ale aj všetkých, ktorí veria, že zariadenia pre športovanie a aktívne trávenie voľného času robia z nášho mesta lepšie miesto pre život. <br/><br/> Mantinely zo Skalice sme kúpili spolu s prepravou. Cena však nezahrňuje prepravu plexiskiel a tiež nie koordináciu a organizáciu demontáže v Skalici, úpravy plochy v Šali a technické riešenie a realizáciu ich montáže na našom štadióne vrátane výroby niekoľkých metrov mantinelov na vyrovnanie rozmerových rozdielov medzi skalickou a našou ľadovou plochou. <br/><br/> Máme vypracovanú ponuku od špecialistu na takéto projekty, časť z nej pochopiteľne pozostáva priamo z výkonov tohto špecialistu a výroby chýbajúcich kusov mantinelov, zvyšok je tvorený prepravou, zakúpením a úpravou spojovacieho a hutného materiálu a búracích a pomocných prác pri inštalácii v Šali.</p>
         </div>
         <div class="container-fluid text-center">
-            <h3 class="m-5 text-center"><b>Konkrétne potrebujeme/hľadáme:</b></h3>
-            <h3 class="m-5 text-center"><b>...</b></h3>
+            <!-- <h3 class=" text-center"><b>Konkrétne potrebujeme/hľadáme:</b></h3>
+            <h3 class=" text-center"><b>...</b></h3> -->
         </div>
-    </div>
+    </article>
     <!-- Bottom container -->
-    <div>
-        <div class="contact-box">
+    <footer>
+        <!-- <div class="contact-box">
             <div class="container">
                 <div class="row">
                 <div class="col">
@@ -112,9 +142,11 @@
                     <label class="align-right">Sezóna minigolfu ukončená</label>
                 </div>
             </div>
-        </div>
-    </div>
-    </div>
+        </div> -->
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script>
         var $root = $('html, body');
         $('a[href^="#"]').click(function () {

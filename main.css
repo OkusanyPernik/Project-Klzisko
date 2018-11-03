@@ -10,13 +10,13 @@ html {
     font-size: 4rem;
 }
 .text-size-2 {
-    font-size: 1.8rem;
+    font-size: 1.8rem!important;
 }
 .text-size-3 {
     font-size: 5em;
 }
 .text-size-4 {
-    font-size: 1.250em;
+    font-size: 1.1rem;
 }
 .m-7 {
     margin: 3rem 5rem!important;
@@ -81,4 +81,10 @@ html {
     background-color: dimgray;
     color: white;
     display: inline-block;
+}
+@media (max-width: 575.98px) { 
+    .text-size-4 {
+        font-size: 0.9rem
+        
+    }
 }
