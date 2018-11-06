@@ -70,25 +70,25 @@
     </nav>
     <!-- Contact form -->
     <!-- Kontaktný formulár funguje ale labely asi zmažem, zatiaľ sú tam dočasne ako aj mt-2 pri Email -->
-    <form class="container">
+    <form class="container" method="POST">
         <p class="color-1 pt-2">* Všetky polia sú povinne </p>
         <div class="form-row">
             <div class="col">
                 <label for="name">Meno</label>
-                <input type="text" id="name" class="form-control" placeholder="Meno">
+                <input type="text" id="name" name="name" class="form-control" placeholder="Meno">
             </div>
             <div class="col">
                 <label for="surname">Priezvisko</label>
-                <input type="text" id="surname" class="form-control" placeholder="Priezvisko">
+                <input type="text" id="surname" name="surname" class="form-control" placeholder="Priezvisko">
             </div>
         </div>
         <div class="form-group mt-2">
             <label for="email">Email</label>
-            <input type="email" id="email" class="form-control" placeholder="Email">
+            <input type="email" id="email" name="email" class="form-control" placeholder="Email">
         </div>
         <div class="form-group">
             <label for="message">Správa</label>
-            <textarea class="form-control" id="message" rows="6"></textarea>
+            <textarea name="message" class="form-control" id="message" rows="6"></textarea>
         </div>
        <button type="submit" class="btn">Odoslať</button> 
     </form>

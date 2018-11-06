@@ -8,4 +8,9 @@ Na konci tasku v zátvorke je meno pre koho ten task je.
 - [] Dokončíť footer container a doplniť ho do všetkých súborov. (Matej)
 - [] Vybrať vhodné fonty a pripraviť prezentačné paragrafy. (Matej)
 - [] **Prebrať dôležité body stretnutia s Dávidom.** (Adam, Matej)
-- [] Upraviť formulár (**David**) a pridať + prispôsobiť php script pre kontaktný formulár. (Matej)
+    1. Vybrať farebnú paletu pre celú webstránku.
+    2. Vyriešiť webhosting a doménu.
+    3. Podrobne upraviť formulár a vyriešiť detaily (emaily a pod.).
+    4. FB stránka a následné testovanie sharingu (FB button dočasne vo footeri).
+- [x] Upraviť formulár (**David**) a pridať + prispôsobiť php script pre kontaktný formulár. (Matej)
+- [] Upraviť hopup button. Zatiaľ je spravená optimalizácia iba pre `max-width: 575.98px`. (Matej)
