@@ -40,7 +40,7 @@
         else window.addEventListener('load', loadDeferredStyles);
     </script>
     <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
         <a class="navbar-brand" href="index.html">Šaľa na ľad!</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -68,8 +68,145 @@
             </ul>
         </div>
     </nav>
+    <!-- Text -->
+    <article>
+        <section class="container custom-padding">
+            <div class="text-center"><img src="images/logos/erbsalatransparent.png" class="p-2" width="200" height="200" /></div>
+            <h5 class="custom-head">mesto Šaľa</h3>
+            <p class="custom-para">majiteľ a správca štadióna. Vedenie mesta i zamestnanci zodpovední za správu a údržbu s nami komunikujú a spolupracujú. Mesto vyčleňuje na zimný štadión prostriedky z rozpočtu, ktoré samostatne síce nestačia na zaistenie budúcnosti zimného štadióna, prísľub/ochota dlhodobého udržania týchto rozpočtových prostriedkov nám však dáva možnosť oslovovať potenciálnych investorov so zaujímavými východzími podmienkami pre vytvorenie partnerských konceptov na vybudovanie zimnej športovej haly.</p>
+        </section>
+        <section class="container custom-padding">
+            <h5 class="custom-head">p. Imrich Varga</h3>
+            <p class="custom-para">dobrý duch zimného štadióna – zúčastnil sa výstavby štadióna a stále patrí k tímu, ktorý zabezpečuje jeho prevádzku. V súčasnosti už na dôchodku, ale svojimi znalosťami a schopnosťami kľúčová osoba pri hľadaní a realizácii riešení ohľadne mantinelov, technológií, rolieb…</p>
+            <div class="text-center"><a href="https://www.facebook.com/Swissvax.Sala/"><img src="images/logos/logo-pali.jpg" class="" width="250" height="200" /></a></div>
+        </section>
+        <section class="container custom-padding">
+            <h5 class="custom-head">Profesionál Car Wash & Detailing – Pavol Petro</h3>
+            <p class="custom-para">(motoristický a) športový nadšenec, ktorému tiež osud štadióna nie je ľahostajný a rozhodol sa priložiť ruku k dielu. Aktívne a z najväčšej časti zabezpečuje, organizuje, koordinuje, ale i sám sa zúčastňuje jednotlivých akcií súvisiacich s inštaláciou skalických mantinelov</p>
+        </section>
+        <section class="container custom-padding">
+            <h5 class="custom-head">Dávid Šmotlák</h3>
+            <p class="custom-para">miestny hokejový odchovanec, ktorý sa aktívne prihlásil ku podpore našej iniciatívy a z jeho podpory zatiaľ vzišlo niekoľko cenných príspevkov k nášmu projektu – zabezpečenie frézy na betón a finančné dary od miestnych firiem. spolu s <span>Ondrejom</span> Potúčkom tiež zapožičanú frézu popreháňali po ploche pri zarovnávaní povrchu.</p>
+        </section>
+        <section class="container custom-padding">
+            <h5 class="custom-head">Luky Trans – Ján Kysučan</h3>
+            <p class="custom-para">dopravca, ktorý poskytol kapacity na prepravu mantinelov zo Skalice.</p>
+            <div class="text-center"><a href="http://www.lukytrans.sk/"><img src="images/logos/logolukytrans.png" class="img-fluid p-2" /></a></div>
+        </section>
+        <section class="container custom-padding">
+            <h5 class="custom-head">Mont MG s.r.o. – (Miroslav Gera)</h3>
+            <p class="custom-para">spoločnosť disponujúca manipulačnou technikou, ktorá zabezpečila vykládku mantinelov v Šali.</p>
+        </section>
+        <section class="container custom-padding">
+            <h5 class="custom-head">Geos, s.r.o.</h3>
+            <p class="custom-para">geodetické služby, pomohli nám so zameraním pôvodného stavu mantinelov.</p>
+        </section>
+        <section class="container custom-padding">
+            <h5 class="custom-head">Develop Group a.s. – Miroslav Sýkora</h3>
+            <p class="custom-para">poskytol bager na demontáž najväčšej časti okopového múrika.</p>
+        </section>
+        <section class="container custom-padding">
+            <h5 class="custom-head">Eisen s. r. o.</h3>
+            <p class="custom-para">spoločnosť prevádzkujúca zberný dvor pomohla zapožičaním vozidla a kontajneru a zabezpečením odvozu betónovej sute z demontovaného múrika.</p>
+            <div class="text-center"><a href="http://www.eisen.sk/"><img src="images/logos/eisen.png" class="img-fluid p-2" /></a></div>
+        </section>
+        <section class="container custom-padding">
+            <h5 class="custom-head">Ivo Holásek – IWON</h3>
+            <p class="custom-para">železiarstvo a požičovňa pracovného náradia – poskytli búracie kladivo na odstránenie poslednej časti okopového múrika.</p>
+            <div class="text-center"><a href="http://www.iwon.sk/"><img src="images/logos/iwon-logo-universal-color.png" class="img-fluid p-2" /></a></div>
+        </section>
+        <section class="container custom-padding">
+            <h5 class="custom-head">Pegas – Darčeky a Delikatesy – Peter Tóth</h3>
+            <p class="custom-para">postaral sa o kvalitný a výdatný pitný režim brigádnikov.</p>
+        </section>
+        <section class="container custom-padding">
+            <h5 class="custom-head">Recoma, s.r.o. – Ľudovít Baranovič</h3>
+            <p class="custom-para">zabezpečí kompletnú dodávku tabule sponzorov, ktorá bude umiestnená na plote vedľa vchodu na zimný štadión.</p>
+            <div class="text-center"><a href="http://www.recoma.sk/"><img src="images/logos/recoma.jpg" class="img-fluid p-2" /></a></div>
+        </section>
+        <section class="container custom-padding">
+            <h5 class="custom-head">Fritech, s.r.o. – Martin Packa</h3>
+            <p class="custom-para">zabezpečí rekošntrukciu lavičiek vrátane stien kabín.</p>
+            <div class="text-center"><a href="http://www.fritech.sk/o-nas"><img src="images/logos/fritech-original.png" class="img-fluid p-2" /></a></div>
+        </section>
+        <section class="container custom-padding">
+            <h5 class="custom-head">Bestrent – Zoltán Kőrösi</h3>
+            <p class="custom-para">požičovňa mechanizácie – zapožičali frézu na betón, ktorou sme zarovnávali priestor pre osadenie mantinelov.</p>
+            <div class="text-center"><a href="http://bestrent.info/SK/"><img src="images/logos/logo-bestrent.png" class="img-fluid p-2" /></a></div>
+        </section>
+        <section class="container custom-padding">
+            <h5 class="custom-head">Astrium – Ivan Stračár</h3>
+            <p class="custom-para">materiálne zabezpečenie maľovania čiar.</p>
+            <div class="text-center"><a href="http://www.astrium.sk/#!Vienna_Ernst_Happel_Stadion_Polytan__Blau__1___1600x1200_"><img src="images/logos/astrium-logo.png" class="img-fluid p-2" /></a></div>
+        </section>
+        <section class="container custom-padding">
+            <h5 class="custom-head">Slniečkovo</h3>
+            <p class="custom-para">sponzorstvo čiar.</p>
+            <div class="text-center"><a href="https://www.slnieckovo.sk/"><img src="images/logos/slnieckovo-logo-2.png" class="img-fluid p-2" /></a></div>
+        </section>
+        <section class="container custom-padding">
+            <div>
+                <!-- + link -->
+                <p class="custom-para">
+                    Mimoriadne nás teší a veľmi si vážime záujem a iniciatívu ľudí z tohto zoznamu. Náš projekt je založený na očakávaní, že aj na Slovensku/ v Šali je možné budovať zmysluplné hodnoty z potenciálu tých ľudí, ktorí majú zmysel pre spoločenskú zodpovednosť a sú pripravení investovať čas, energiu, materiál, či peniaze do verejnoprospešných akcií. Sme radi, že sa naše očakávania napĺňajú a náš projekt dokazuje, že úspešní ľudia s nezištným záujmom pomôcť ostatným nie sú len naivnou predstavou, ale reálnou kvalitou komunity nášho mesta. <br/><br/> Tento zoznam nie je úplný, pretože rešpektujeme vôľu tých našich podporovateľov, ktorí si neželajú byť menovaní, ale angažujú sa alebo konkrétnym spôsobom už podporili náš projekt. <br/><br/> Zároveň veríme, že tento zoznam nie je ani definitívny, pretože náš cieľ je dlhodobý, núka mnoho možností, ako ho podporiť a my by se chceli, aby bol čo najdlhší. Ak Vás zaujala možnosť pripísať sa ku vyššie menovaným, budeme radi, ak <a href="contactus.html" class="custom-link">nás oslovíte</a>. </p>
+                </p>
+            </div>
+        </section>
+    </article>
+    <!-- Hopup button -->
+    <div>
+        <div class="fixed-bottom hopup">
+            <a href="#navbar" class="hopup-button" title="Odkaz na začiatok stránky"><img src="./images/hopup.svg" class="hopup-img"/></a>
+        </div>
+    </div>
+    <!-- Bottom container -->
+    <!-- Nefunguje na iPad rozlíšení pri vertikálnej orientácií! -->
+    <footer>
+        <div class="container-fluid footer-container">
+            <div class="container p-2">
+                <div class="row">
+                    <div class="col text-center">
+                        <img src="./images/map.png" width="16" height="16" alt="Mapa" title="Vektor znázorňujúci mapu">
+                        <label class=""><a href="https://goo.gl/maps/kUsCxbCHErw" title="Odkaz na polohu v aplikácií Google maps" class="custom-link">Váhová 1006/17,SK-927 01 Šaľa</a></label>
+                    </div>
+                    <div class="col text-center">
+                        <img src="./images/email.png" width="20" height="20" alt="Email" title="Vektor znázorňujúci email">
+                        <label class="">salanalad@gmail.com</label>
+                    </div>
+                    <div class="col text-center">
+                        <img src="./images/time.png" width="16" height="16" alt="Čas" title="Vektor znázorňujúci čas">
+                        <label class="">Sezóna minigolfu ukončená</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <!-- Upraviť pozíciu FB buttonu -->
+                        <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fsk-sk.facebook.com%2Fhkmladezsala%2F&layout=button&size=large&mobile_iframe=true&width=73&height=28&appId" width="83" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/sk_SK/sdk.js#xfbml=1&version=v3.2';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+        var $root = $('html, body');
+        $('a[href^="#"]').click(function () {
+            $root.animate({
+                    scrollTop: $( $.attr(this, 'href') ).offset().top
+                }, 500);
+            return false;
+        }); 
+    </script>
 </body>
 </html>

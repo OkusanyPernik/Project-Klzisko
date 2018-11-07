@@ -54,9 +54,12 @@ html {
     margin-top: 5rem;
     margin-left: 10rem;
 }
+ul {
+    padding-left: 1.4rem;
+}
 
-.font {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.custom-headline-font {
+    
 }
 
 .red-text {
@@ -105,7 +108,17 @@ html {
 }
 .hopup {
     border-radius: 100%;
-}        
+    right: 20px!important;
+    bottom: 20px!important;
+    left: auto!important;
+    background-color: #fff;
+    padding: 8px;
+    transition: .3s;
+}
+.hopup-img {
+    width: 40px;
+    height: 40px;
+}
 @media (max-width: 575.98px) { 
     .text-size-4 {
         font-size: 0.9rem
@@ -114,25 +127,63 @@ html {
         display: block!important
     }
     .hopup {
-        right: 10px!important;
-        bottom: 10px!important;
+        right: 20px!important;
+        bottom: 20px!important;
         left: auto!important;
         background-color: #fff;
-        padding: 4px;
+        padding: 8px;
     }
     .hopup-img {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
+    }
+    .custom-head {
+        text-align: center;
+    }
+    .custom-para {
+        font-size: 1.1rem;
+        word-break: normal;
+    }
+    .custom-padding {
+        padding: 1.25rem!important;
     }
 }
 @media (min-width: 768px) and (max-width: 991.98px) { 
     .hero-container {
         height: 100vh;
     }
+    .hopup {
+        right: 20px!important;
+        bottom: 20px!important;
+        left: auto!important;
+        background-color: #fff;
+        padding: 8px;
+    }
+    .hopup-img {
+        width: 40px;
+        height: 40px;
+    }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .hero-container {
         height: 100vh;
+    }
+    .hopup {
+        right: 30px!important;
+        bottom: 30px!important;
+        left: auto!important;
+        background-color: #fff;
+        padding: 12px;
+    }
+    .hopup-img {
+        width: 50px;
+        height: 50px;
+    }
+}
+@media (min-width: 1199.98px) {
+    .hopup:hover {
+        background-color: rgb(185, 185, 185);
+        transform: translateY(-2px);
     }
 }
 /* .pokus::before {
