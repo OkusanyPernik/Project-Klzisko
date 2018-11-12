@@ -14,3 +14,22 @@ Na konci tasku v zátvorke je meno pre koho ten task je.
     4. FB stránka a následné testovanie sharingu (FB button dočasne vo footeri).
 - [x] Upraviť formulár (**David**) a pridať + prispôsobiť php script pre kontaktný formulár. (Matej)
 - [x] Upraviť hopup button. Zatiaľ je spravená optimalizácia iba pre `max-width: 575.98px`. (Matej)
+## Tasks week 2 - 
+- [x] Zmeniť fotku a upraviť position podľa screenshotov. (Matej)
+- [x] Mobilné zariadenie hero-container nalavo a laptop zariadenie v strede nacentrované (Laptop pokračovať center) (Mobil pokračovať nalavo) (Matej)
+> Positioning som nezmenil po analíze kvôli UX...
+- [x] Zmeniť navbary na #6d0100 (bordová) + zmeniť ikony + hopup button. (Adam, Matej)
+- [x] Pridať responzívny iframe googlemaps do kontaktov. (Matej)
+- [] Zmeniť ikony na biele a nájsť ikony v svg formáte (mapa, email, hodiny, hamburger(pri navbare napravo)). (Adam)
+- [] **Prebrať dôležité body stretnutia s Dávidom.** (Adam, Matej)
+    1. Vybrať kombinácie link farieb .custom-link/-2 + hover.
+    2. Hopup hover farbu.
+    3. Google maps sizing.
+    4. V diáry Kontaktuje-nás/podporovateľom/ozvi-sa-nám link, farba + hover + anim ?
+    5. Galéria ok?
+    6. Doplniť všetky texty a aktualizovať ich.
+- [x] Prečistiť zbytočný a nepoužitý (css). (Adam, Matej)
+- [] Prečistiť zbytočný a nepoužitý (html). (Adam, Matej)
+## Tasks week 3 (Matej) - 
+- [] Vytvoriť zvyšné seo tagy. (seo)
+- [] Komprimovať všetky fotky. (seo)

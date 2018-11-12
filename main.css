@@ -1,11 +1,32 @@
+/* Navigation bars */
+.nav-link, .navbar-brand {
+    color: #fff!important;
+    transition: .3s;
+}
+.navbar-toggler {
+    border-color: #fff!important;
+    color: #fff!important;
+}
+.navbar-toggler-icon {
+    background-image: url("")!important;
+}
+.month-container {
+    padding: 15px;
+    text-decoration: none;
+    color: #000;
+    background-color: antiquewhite;
+}
+.footer-container {
+    background-color: #6d0100;
+    color: #fff;
+}
+/* Hero container */
 .hero-container {
-    background-image: url("images/title-original.jpg");
+    background-image: url("images/fotka_1.jpg");
     background-size: cover;
     height: 100vh;
 }
-html {
-    font-size: 1rem;
-}
+/* Font styles + button styles */
 .text-size-1 {
     font-size: 4rem;
 }
@@ -18,102 +39,65 @@ html {
 .text-size-4 {
     font-size: 1.1rem;
 }
-.custom-link {
+.custom-link-2 {
+    color: #6d0100!important;
+}
+.custom-link, .custom-link-2 {
     text-decoration: none;
-    color: #000;
+    color: #fff;
     cursor: pointer;
-    
+    transition: .3s;
 }
 .custom-link:hover {
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
-.m-7 {
-    margin: 3rem 5rem!important;
+.custom-link-2:hover {
+    text-decoration: none;
+    color: rgb(0, 0, 0)!important;
+}
+.custom-color {
+    background-color: #5f0200;
 }
 .btn-custom {
     padding: 0.5rem 1.2rem;
     font-size: 1.5rem;
-    color: #000;
+    color: #fff;
     text-decoration: none;
-    background-color: #ffffff;
-    border: 1px solid #ffffff;
+    background-color: #6d0100;
+    border: 1px solid #6d0100;
     transition: 0.3s;    
 }
 .btn-custom:hover {
-    color: #ffffff;
+    color: #6d0100;
     text-decoration: none;
-    background-color: #000;
-    border: 1px solid #ffffff;
+    background-color: #fff;
+    border: 1px solid #fff;
     cursor: pointer;
 }
-.upper-margin {
-    margin-top: 2rem;
-}
-
-.sala-na-lad {
-    margin-top: 5rem;
-    margin-left: 10rem;
-}
-ul {
-    padding-left: 1.4rem;
-}
-
-.custom-headline-font {
-    
-}
-
-
 .red-text {
     color: red;
 }
-
-.middle-text {
-    text-align: center;
-    font-size: 35px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+/* Position styles */
+ul {
+    padding-left: 1.4rem;
 }
-
-.sala-na-lad-text-small {
-    font-size: 20px;
-    color: darkgray;
+.m-7 {
+    margin: 3rem 5rem!important;
 }
-
+/* Zmeniť -> */
 .galeria-text {
     font-size: 20px;
     color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-
-
-.paragraf-text-block {
-    margin-left: 30%;
-    margin-right: 30%;
-    font-size: 20px;
-}
-.color-1 {
-    color: rgb(88, 88, 88);
-}
-.contact-box {
-    height: 10rem;
-    width: 100%;
-    padding: 4rem;
-    background-color: dimgray;
-    color: white;
-    display: inline-block;
-}
-.footer-container {
-    /* DAVID */
-    background-color: rgb(73, 164, 206);
-    color: #000;
-}
+/* Hopup button */
 .hopup {
     border-radius: 100%;
     right: 20px!important;
     bottom: 20px!important;
     left: auto!important;
-    background-color: #fff;
+    background-color: #6d0100!important;
     padding: 8px;
     transition: .3s;
 }
@@ -121,18 +105,19 @@ ul {
     width: 40px;
     height: 40px;
 }
-.month-container {
-    padding: 15px;
-    text-decoration: none;
-    color: #000;
-    background-color: antiquewhite;
-}
+/* Phones portrait */
 @media (max-width: 575.98px) { 
+    #hero-h1 {
+        display: none;
+    }
     .text-size-4 {
-        font-size: 0.9rem
+        font-size: 0.9rem;
+    }
+    .image-align {
+        text-align: center
     }
     .row {
-        display: block!important
+        display: block!important;
     }
     .hopup {
         right: 20px!important;
@@ -144,9 +129,6 @@ ul {
     .hopup-img {
         width: 40px;
         height: 40px;
-    }
-    .custom-head {
-        text-align: center;
     }
     .custom-para {
         font-size: 1.1rem;
@@ -156,9 +138,13 @@ ul {
         padding: 1.25rem!important;
     }
 }
+/* Phones landscape + tablets */
 @media (min-width: 768px) and (max-width: 991.98px) { 
     .hero-container {
         height: 100vh;
+    }
+    .image-align {
+        text-align: unset
     }
     .hopup {
         right: 20px!important;
@@ -172,6 +158,7 @@ ul {
         height: 40px;
     }
 }
+/* Tablets */
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .hero-container {
         height: 100vh;
@@ -188,17 +175,13 @@ ul {
         height: 50px;
     }
 }
+/* Laptops + big screens */
 @media (min-width: 1199.98px) {
     .hopup:hover {
-        background-color: rgb(185, 185, 185);
         transform: translateY(-2px);
+        background-color: #000!important;
+    }
+    .nav-link:hover, .navbar-brand:hover {
+        color: #ffffffd5!important;
     }
 }
-/* .pokus::before {
-    background: url("./images/map.png");
-    width: 16px;
-    height: 16px;
-    display: block;
-    position: absolute;
-
-} */
