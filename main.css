@@ -21,8 +21,8 @@
     color: #fff;
 }
 /* Hero container */
-.hero-container {
-    background-image: url("images/fotka_1.jpg");
+.hero-container { 
+    background-image: url("images/hero-photo.jpg");
     background-size: cover;
     height: 100vh;
 }
