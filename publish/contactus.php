@@ -1,3 +1,6 @@
+<?php 
+header('Content-Type: text/html; charset=utf-8');
+?>
 <!DOCTYPE html>
 <html lang="sk">
 <head>
@@ -40,7 +43,6 @@
         if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
         else window.addEventListener('load', loadDeferredStyles);
     </script>
-    <!-- Navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-light custom-color" id="navbar">
         <a class="navbar-brand" href="index.html" title="Odkaz na úvodnú stránku">Šaľa na ľad!</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,85 +53,73 @@
                 <li class="nav-item">
                     <a class="nav-link" title="Odkaz na úvodnú stránku" href="index.html">Úvod </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" title="Odkaz na stránku o nás" href="whoweare.html">Kto sme</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" title="Odkaz na stránku s dennikom"href="diary.html">Dennik</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" title="Odkaz na stránku s galériou"href="gallery.html">Galéria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" title="Odkaz na stránku so sponzormi"href="supportus.html">Podporujú nás</a>
+                </li>
                 <li class="nav-item active">
-                    <a class="nav-link" title="Odkaz na stránku o nás" href="whoweare.html">Kto sme <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" title="Odkaz na stránku s dennikom" href="diary.html">Dennik</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" title="Odkaz na stránku s galériou" href="gallery.html">Galéria</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" title="Odkaz na stránku so sponzormi" href="supportus.html">Podporujú nás</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" title="Odkaz na stránku s kontaktom" href="contactus.php">Kontaktujte nás</a>
+                    <a class="nav-link" title="Odkaz na stránku s kontaktom" href="contactus.php">Kontaktujte nás <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
     </nav>
-    <!-- Text -->
-    <!-- <h2 class="text-size-3  "><b>Kto sme</b></h2> -->
-    <article class="text-size-4">
-        <div class="container">
-            <h3 class="text-size-2"><b>Veronika Pahokiová</b></h3> 
-        </div>
-        <div class="container ">
-            <h3 class="text-size-2"><b>Jozef Holota</b></h3>  
-            <p class="">Šaľan od narodenia, otvorenie zimného štadióna som zažil ako žiak základnej školy. Na zimnom štadióne som strávil mnoho hodín ako tínedžer so svojimi rovesníkmi. Neskôr sa tu naučili korčuľovať i všetky 3 naše deti.</p>
-            <p class="">V práci sa zaoberám logistikou, zúčastňujem sa, iniciujem či riadim mnohé projekty pre svojich zamestnávateľov, veľké medzinárodné spoločnosti.</p>
-            <p class="">Šport v rôznych podobách je pre mňa ako bývalého aktívneho a súčasného rekreačného športovca neoddeliteľnou súčasťou môjho života, korčuľovanie a hokej ku nim tiež patrí.</p>
-            <p class="">Angažujem sa, lebo dúfam, že moje profesionálne schopnosti v kombinácii s motiváciou a snahou pomôcť Šali a zimnému štadiónu majú šancu priniesť reálny výsledok.</p>
-        </div>
-        <div class="container ">
-            <h3 class="text-size-2"><b>Tvoje meno</b></h3>
-            <p class="">Radi privítame ľudí, ktorí majú chuť a možnosť pomôcť tejto iniciatíve, <a href="contactus.php">ozvi sa nám</a>, ak ku takým patríš.</p>
-            <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fsk-sk.facebook.com%2Fhkmladezsala%2F&layout=button&size=large&mobile_iframe=true&width=73&height=28&appId" width="83" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-        </div>
-        <div>
-    </article>
-    <!-- Bottom container -->
-    <footer>
-        <div class="container-fluid footer-container">
-            <div class="container p-2">
-                <div class="row">
-                    <div class="col text-center">
-                        <img src="./images/map.png" width="16" height="16" alt="Mapa" title="Vektor znázorňujúci mapu">
-                        <label class=""><a href="https://goo.gl/maps/kUsCxbCHErw" title="Odkaz na polohu v aplikácií Google maps" class="custom-link">Váhová 1006/17,SK-927 01 Šaľa</a></label>
-                    </div>
-                    <div class="col text-center">
-                        <img src="./images/email.png" width="20" height="20" alt="Email" title="Vektor znázorňujúci email">
-                        <label class="">salanalad@salanalad.sk</label>
-                    </div>
-                    <div class="col text-center">
-                        <img src="./images/time.png" width="16" height="16" alt="Čas" title="Vektor znázorňujúci čas">
-                        <label class="">Sezóna minigolfu ukončená</label>
-                    </div>
-                </div>
+    <form class="container" method="post">
+        <h2 class="text-center mt-3">Kontaktujte nás</h2>
+        <p class="pt-2 text-center">* Všetky polia sú povinné </p>
+        <div class="form-row">
+            <div class="col">
+                <label for="name">Meno</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Meno">
+            </div>
+            <div class="col">
+                <label for="surname">Priezvisko</label>
+                <input type="text" id="surname" name="surname" class="form-control" placeholder="Priezvisko">
             </div>
         </div>
-    </footer>
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/sk_SK/sdk.js#xfbml=1&version=v3.2';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-    </script>
+        <div class="form-group mt-2">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="message">Správa</label>
+            <textarea name="message" type="text" class="form-control" id="message" rows="6"></textarea>
+        </div>
+       <button type="submit" name="submit" value="Submit" class="btn-custom btn-lg">Odoslať</button> 
+    </form>
+    <?php
+    if(isset($_POST['submit'])){
+        $name = $_POST['name'];
+        $surname = $_POST['surname'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+        if ($name && $surname && $email && $message) {
+            $receiver = "salanalad@salanalad.sk";
+            $subject = 'Správa z www.salanalad.sk';
+            $from = 'salanalad@salanalad.sk';
+            $mailcontent = 	 'Meno: '.$name."\n"
+            .'Priezvisko: '.$surname."\n"
+            .'E-mail: '.$email."\n"
+            .'Správa: '.$message."\n\n"
+            ."Vám poslal prostredníctvom webového formulára nasledujúcu správu:\n\n".$msg;
+            $headers = 	'From: salanalad@salanalad.sk' . "\r\n" .
+            'Reply-To: '.$mail. "\r\n";                    
+            mail($receiver , $subject, $mailcontent, $headers);   
+        }
+    }
+    ?>
+    <div class="text-center container mt-3">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.3972796669464!2d17.868875115720765!3d48.16042397922527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476b6d012fb0f62f%3A0x5a4c8b5d666b1747!2zVsOhaG92w6EgMTAwNi8xNywgOTI3IDAxIMWgYcS-YQ!5e0!3m2!1sen!2ssk!4v1542037487335" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script>
-        var $root = $('html, body');
-        $('a[href^="#"]').click(function () {
-            $root.animate({
-                    scrollTop: $( $.attr(this, 'href') ).offset().top
-                }, 500);
-            return false;
-        }); 
-    </script>
 </body>
 </html>

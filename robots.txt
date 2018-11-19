@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: ./images/hero-photo.jpg
+Sitemap: https://salanalad.sk/sitemap.xml

@@ -85,6 +85,10 @@ ul {
 .m-7 {
     margin: 3rem 5rem!important;
 }
+.special_position {
+    position: relative!important;
+    top: -8rem!important;    
+}
 /* Zmeniť -> */
 .galeria-text {
     font-size: 20px;
@@ -184,4 +188,5 @@ ul {
     .nav-link:hover, .navbar-brand:hover {
         color: #ffffffd5!important;
     }
+
 }

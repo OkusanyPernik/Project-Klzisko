@@ -33,10 +33,18 @@ Na konci tasku v zátvorke je meno pre koho ten task je.
 - [x] Prečistiť zbytočný a nepoužitý (css). (Adam, Matej)
 - [] Prečistiť zbytočný a nepoužitý (html). (Adam, Matej)
 ## Tasks week 3 (Matej) -
-- [] Vytvoriť zvyšné seo tagy.
-- [] Komprimovať všetky fotky.
-- [] robots.txt
-- [] sitemap.xml
-- [] Metatagy - 
+ag9rNFd3Pz
+- [x] Vytvoriť zvyšné seo tagy.
+- [x] Komprimovať všetky fotky.
+- [x] robots.txt
+- [x] sitemap.xml
+- [x] Metatagy - 
     1. keywords - klzisko, šaľa, hokejový klub, 
     2. description - Oficiálna webová stránka pre šalianske klzisko. Nájdete tu všetky dôležité informácie týkajúce sa prevádzky,rekonštrukcie a budúcnosti klziska. 
+- [] Pridať do .htaccess 
+    1. ErrorDocument 404 404.html
+- [x] Pridať do robots.txt
+    1. Sitemap: https://salanalad.sk/sitemap.xml
+- [] Opraviť php script.
+- [] Pridať kompresiu http://httpd.apache.org/docs/current/mod/mod_deflate.html 
+- [] browser caching

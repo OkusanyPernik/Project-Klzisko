@@ -1,0 +1,19 @@
+RewriteEngine On 
+RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [L,R]
+RewriteCond %{HTTPS_HOST} ^www.salanalad.sk [NC] 
+RewriteRule ^(.*)$ https://salanalad.sk/$1 [L,R=301]
+DirectoryIndex index.html 
+RedirectPermanent /index.php https://salanalad.sk/index.html
+
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+Header set Cache-Control "max-age=290304000, public"
+</FilesMatch>
+
+<FilesMatch "\.(xml|txt)$">
+Header set Cache-Control "max-age=172800, public, must-revalidate"
+</FilesMatch>
+
+<FilesMatch "\.(html|htm)$">
+Header set Cache-Control "max-age=7200, must-revalidate"
+</FilesMatch>
