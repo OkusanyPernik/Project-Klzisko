@@ -1,1 +1,49 @@
 <style>.nav-link,.navbar-brand{color:#fff!important;transition: .3s}.navbar-toggler{border-color:#fff!important;color:#fff!important}.navbar-toggler-icon{background-image:url("")!important}.month-container{padding:15px;text-decoration:none;color:#000;background-color:antiquewhite}.footer-container{background-color:#6d0100;color:#fff}.hero-container{background-image:url("images/hero-photo.jpg");background-size:cover;height:100vh}.text-size-1{font-size:4rem}.text-size-2{font-size:1.8rem!important}.text-size-3{font-size:5em}.text-size-4{font-size:1.1rem}.custom-link-2{color:#6d0100!important}.custom-link,.custom-link-2{text-decoration:none;color:#fff;cursor:pointer;transition: .3s}.custom-link:hover{text-decoration:none;color:#fff}.custom-link-2:hover{text-decoration:none;color:rgb(0,0,0)!important}.custom-color{background-color:#5f0200}.btn-custom{padding:0.5rem 1.2rem;font-size:1.5rem;color:#fff;text-decoration:none;background-color:#6d0100;border:1px solid #6d0100;transition:0.3s}.btn-custom:hover{color:#6d0100;text-decoration:none;background-color:#fff;border:1px solid #fff;cursor:pointer}.red-text{color:red}ul{padding-left:1.4rem}.m-7{margin:3rem 5rem!important}.special_position{position:relative!important;top:-8rem!important}.galeria-text{font-size:20px;color:black;font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif}.hopup{border-radius:100%;right:20px!important;bottom:20px!important;left:auto!important;background-color:#6d0100!important;padding:8px;transition: .3s}.hopup-img{width:40px;height:40px}@media (max-width: 575.98px){#hero-h1{display:none}.text-size-4{font-size:0.9rem}.image-align{text-align:center}.row{display:block!important}.hopup{right:20px!important;bottom:20px!important;left:auto!important;background-color:#fff;padding:8px}.hopup-img{width:40px;height:40px}.custom-para{font-size:1.1rem;word-break:normal}.custom-padding{padding:1.25rem!important}}@media (min-width: 768px) and (max-width: 991.98px){.hero-container{height:100vh}.image-align{text-align:unset}.hopup{right:20px!important;bottom:20px!important;left:auto!important;background-color:#fff;padding:8px}.hopup-img{width:40px;height:40px}}@media (min-width: 992px) and (max-width: 1199.98px){.hero-container{height:100vh}.hopup{right:30px!important;bottom:30px!important;left:auto!important;background-color:#fff;padding:12px}.hopup-img{width:50px;height:50px}}@media (min-width: 1199.98px){.hopup:hover{transform:translateY(-2px);background-color:#000!important}.nav-link:hover,.navbar-brand:hover{color:#ffffffd5!important}}</style>
+
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+Header set Cache-Control "max-age=290304000, public"
+</FilesMatch>
+<FilesMatch "\.(xml|txt)$">
+Header set Cache-Control "max-age=172800, public, must-revalidate"
+</FilesMatch>
+<FilesMatch "\.(html|htm)$">
+Header set Cache-Control "max-age=7200, must-revalidate"
+</FilesMatch>
+
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/x-icon "access plus 1 year"
+ExpiresDefault "access plus 2 days"
+</IfModule>
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+AddOutputFilterByType DEFLATE application/x-font
+AddOutputFilterByType DEFLATE application/x-font-opentype
+AddOutputFilterByType DEFLATE application/x-font-otf
+AddOutputFilterByType DEFLATE application/x-font-truetype
+AddOutputFilterByType DEFLATE application/x-font-ttf
+AddOutputFilterByType DEFLATE application/x-javascript
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE font/opentype
+AddOutputFilterByType DEFLATE font/otf
+AddOutputFilterByType DEFLATE font/ttf
+AddOutputFilterByType DEFLATE image/svg+xml
+AddOutputFilterByType DEFLATE image/x-icon
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/javascript
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/xml
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+Header append Vary User-Agent
+</IfModule>

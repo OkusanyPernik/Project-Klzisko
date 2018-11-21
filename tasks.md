@@ -20,9 +20,9 @@ Na konci tasku v zátvorke je meno pre koho ten task je.
 > Positioning som nezmenil po analíze kvôli UX...
 - [x] Zmeniť navbary na #6d0100 (bordová) + zmeniť ikony + hopup button. (Adam, Matej)
 - [x] Pridať responzívny iframe googlemaps do kontaktov. (Matej)
-- [] Zmeniť ikony na biele a nájsť ikony v svg formáte (mapa, email, hodiny, hamburger(pri navbare napravo)). (Adam)
-- [] Vyriešiť favicon pre formáty .ico a .png. (Adam)
-- [] **Prebrať dôležité body stretnutia s Dávidom.** (Adam, Matej)
+- [x] Zmeniť ikony na biele a nájsť ikony v svg formáte (mapa, email, hodiny, hamburger(pri navbare napravo)). (Adam)
+- [x] Vyriešiť favicon pre formáty .ico a .png. (Adam)
+- [x] **Prebrať dôležité body stretnutia s Dávidom.** (Adam, Matej)
     1. Vybrať kombinácie link farieb .custom-link/-2 + hover.
     2. Hopup hover farbu.
     3. Google maps sizing.

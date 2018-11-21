@@ -4,11 +4,11 @@ header('Content-Type: text/html; charset=utf-8');
 <!DOCTYPE html>
 <html lang="sk">
 <head>
+    <meta charset="utf-8" />
     <title>Šaľa, na ľad! - Zimný štadión Šaľa, jeho súčasnosť a budúcnosť</title>
     <meta name="description" content="Oficiálna webová stránka pre šalianske klzisko. Nájdete tu všetky dôležité informácie týkajúce sa prevádzky,rekonštrukcie a budúcnosti klziska."/>
     <meta name="keywords" content="klzisko, šaľa, hokejový klub">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta property="og:title" content="Šaľa, na ľad! - Zimný štadión Šaľa, jeho súčasnosť a budúcnosť">
     <meta property="og:type" content="article">
