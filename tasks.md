@@ -46,5 +46,14 @@ ag9rNFd3Pz
 - [x] Pridať do robots.txt
     1. Sitemap: https://salanalad.sk/sitemap.xml
 - [] Opraviť php script.
-- [] Pridať kompresiu http://httpd.apache.org/docs/current/mod/mod_deflate.html 
-- [] browser caching
+- [x] Pridať kompresiu http://httpd.apache.org/docs/current/mod/mod_deflate.html 
+- [x] browser caching
+## Tasks week 4 - 
+- [] Opraviť optimalizáciu pre landscape telefóny
+## Special meeting - 
+1. Dať na landing screen sponzorov ktorý podporili tento projekt.
+    - Dať to pod navbar + aby logá firiem "pochodovali", keď klikne na logo aby ho redirectlo na supportus.html 
+    - na mobile skúsiť či ide animácia ak nie tak aby sa zobrazovali 4 logá ktoré by sa pri refreshi obmienali. 
+2. Vyriešiť niečo ako CMS.
+3. Facebookové linky redirectovať na https://salanalad.sk
+4. Pridať Share button od Facebooku na diary.
