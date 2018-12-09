@@ -69,3 +69,4 @@ ag9rNFd3Pz
   !!POTREBUJE PRISPôSOBENIE NA INÉ ROZLÍŠEIA!!
 - diary - pridané všetky nové záznamy
 - gallery - pridané ďalšie nové fotky
+4. Pridať Share button od Facebooku na diary.
