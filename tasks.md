@@ -69,4 +69,10 @@ ag9rNFd3Pz
   !!POTREBUJE PRISPôSOBENIE NA INÉ ROZLÍŠEIA!!
 - diary - pridané všetky nové záznamy
 - gallery - pridané ďalšie nové fotky
+
+## Final Tasks - 
 4. Pridať Share button od Facebooku na diary.
+- [x] opravit gallery spodny footer
+- [x] pridat plastix + link na web 
+- [x] dennik pridat mesiace do baru
+- [] sponzorske odkazy aby smerovali na supportus.html
