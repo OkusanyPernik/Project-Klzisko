@@ -76,8 +76,21 @@
     border: 1px solid #fff;
     cursor: pointer;
 }
+/*farby textu*/
 .red-text {
     color: red;
+}
+.blue-text{
+    color: blue;
+}
+.green-text{
+    color: green;
+}
+.yellow-text{
+    color: yellow;
+}
+.orange-text{
+    color:orange;
 }
 /* Position styles */
 ul {

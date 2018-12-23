@@ -76,3 +76,9 @@ ag9rNFd3Pz
 - [x] pridat plastix + link na web 
 - [x] dennik pridat mesiace do baru
 - [] sponzorske odkazy aby smerovali na supportus.html
+
+## Posledné úlohy (Adam)
+- Vyriešiť FB like button [Nedá_sa]
+- prispôsobenie iframe rozvrh ľadu [x]
+- Pripraviť pre Jozefa Word s príkladmi kódu [x]
+- NEMÁME LINK NA FOTKY "MAĽOVANIE ČIAR"
