@@ -103,6 +103,10 @@ ul {
     position: relative!important;
     top: -8rem!important;    
 }
+.upper-padding{
+    padding-top: 3rem;
+    margin-top: 0,5rem;
+}
 /* Zmeniť -> */
 .galeria-text {
     font-size: 20px;
