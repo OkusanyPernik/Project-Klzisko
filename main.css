@@ -76,6 +76,12 @@
     border: 1px solid #fff;
     cursor: pointer;
 }
+.aldagy-footer {
+    background-color: #000;
+    color: #fff;
+    height: 50px;
+}
+
 /*farby textu*/
 .red-text {
     color: red;
@@ -151,6 +157,9 @@ ul {
 /* Phones portrait */
 @media (max-width: 575.98px) { 
     #hero-h1 {
+        display: none;
+    }
+    .aldagy-footer-image{
         display: none;
     }
     .text-size-4 {
