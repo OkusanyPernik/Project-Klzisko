@@ -71,7 +71,7 @@ header('Content-Type: text/html; charset=utf-8');
             </ul>
         </div>
     </nav>
-    <form class="container" method="post">
+    <form class="container" accept-charset="ISO-8859-1" method="post">
         <h2 class="text-center mt-3">Kontaktujte nás</h2>
         <p class="pt-2 text-center">* Všetky polia sú povinné </p>
         <div class="form-row">
