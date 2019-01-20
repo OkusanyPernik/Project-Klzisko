@@ -4,7 +4,7 @@ header('Content-Type: text/html; charset=utf-8');
 <!DOCTYPE html>
 <html lang="sk">
 <head>
-    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Šaľa, na ľad! - Zimný štadión Šaľa, jeho súčasnosť a budúcnosť</title>
     <meta name="description" content="Oficiálna webová stránka pre šalianske klzisko. Nájdete tu všetky dôležité informácie týkajúce sa prevádzky,rekonštrukcie a budúcnosti klziska."/>
     <meta name="keywords" content="klzisko, šaľa, hokejový klub">
@@ -109,7 +109,8 @@ header('Content-Type: text/html; charset=utf-8');
             .'E-mail: '.$email."\n"
             .'Správa: '.$message."\n\n"
             ."Vám poslal prostredníctvom webového formulára nasledujúcu správu:\n\n".$msg;
-            $headers = 	'From: salanalad@salanalad.sk' . "\r\n" .
+            $headers = 	
+            'From: salanalad@salanalad.sk' . "\r\n" . "Content-type: text/html; charset=utf-8\n";
             'Reply-To: '.$mail. "\r\n";                    
             mail($receiver , $subject, $mailcontent, $headers);   
         }
